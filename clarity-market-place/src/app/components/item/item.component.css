@@ -1,0 +1,28 @@
+div {
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.img-thumbnail {
+  width: 5%;
+  height: 5%;
+  min-width: 50px;
+}
+
+span {
+  display: inline-block;
+  width: 200px;
+}
+
+input {
+  width: 50px;
+}
+
+.itemTitle,
+.itemCount,
+.itemCost {
+  text-align: center;
+  border: solid red 1px;
+}
