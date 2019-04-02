@@ -2,6 +2,21 @@
   <img src="{{ item.imageUrl }}" alt="{{ item.title }}" class="img-thumbnail" />
   <span class="itemTitle">{{ item.title }}</span>
   <span class="itemCost">{{ item.cost | currency: "USD" }}</span>
-  <input type="number" min="1" value="{{ item.count }}" />
+  <input
+    id="{{ item.id }}"
+    class="itemCount"
+    (click)="onChangeCount(item, $event.target.value)"
+    (change)="onChangeCount(item, $event.target.value)"
+    type="number"
+    min="1"
+    value="{{ item.count }}"
+  />
   <span class="itemCost">{{ item.cost * item.count | currency: "USD" }}</span>
+  <button
+    id="{{ item.id }}"
+    class="itemCount"
+    (click)="onDeleteItem($event.target.id)"
+  >
+    Remove Item
+  </button>
 </div>

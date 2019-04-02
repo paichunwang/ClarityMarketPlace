@@ -1,4 +1,14 @@
 <div>
   <app-navigation></app-navigation>
-  <app-item *ngFor="let item of items" [item]="item"> </app-item>
+  <div>
+    <app-item
+      *ngFor="let item of items"
+      [item]="item"
+      (changeCount)="changeCount($event)"
+      (deleteItem)="deleteItem($event)"
+    >
+    </app-item>
+    <div *ngIf="!emptyArray">Total Cost: {{ total }}</div>
+    <div *ngIf="emptyArray">No Items in Shopping Cart</div>
+  </div>
 </div>
