@@ -2,7 +2,7 @@ div {
   width: 50%;
   border-bottom: 1px solid lightgray;
   padding: 10px;
-  margin-left: 10%;
+  margin: auto;
   text-align: center;
 }
 
@@ -14,17 +14,21 @@ div {
 
 span {
   display: inline-block;
-  width: 200px;
+  min-width: 200px;
+  width: 30%;
+  padding: 10px;
+  /* border: 1px red solid; */
 }
 
 input {
   width: 5%;
   min-width: 50px;
+  margin: 0px 30px;
 }
 
 .itemTitle,
 .itemCount,
 .itemCost {
   text-align: center;
-  border: solid red 1px;
+  /* border: 1px red solid; */
 }

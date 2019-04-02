@@ -19,6 +19,7 @@ export class CartComponent implements OnInit {
     this.getTotal(this.items);
   }
 
+  //get cart total
   getTotal(itemArray) {
     this.total = itemArray
       .reduce((acc, current) => acc + current.count * current.cost, 0)
@@ -28,15 +29,21 @@ export class CartComponent implements OnInit {
     }
   }
 
+  //update cart item count and update total
   changeCount(item: Iteamlist) {
     this.items[item.id - 1] = item;
     this.getTotal(this.items);
   }
 
+  //delete cart item and update total
   deleteItem(id: number) {
     this.items = this.items.filter((element, index, arr) => {
       return element.id != id;
     });
     this.getTotal(this.items);
+  }
+
+  checkOut(total) {
+    console.log(total);
   }
 }

@@ -10,7 +10,7 @@ export class ItemService {
     return [
       {
         id: 1,
-        title: "Product One",
+        title: "Headphone w/ built in microphone and Stand",
         cost: 12.99,
         imageUrl:
           "https://www.jabra.com/-/media/Images/Frontpage/LetUsHelpYou/Product-Series/engage_series.png",
@@ -18,7 +18,7 @@ export class ItemService {
       },
       {
         id: 2,
-        title: "Product Two",
+        title: "Protein Powder",
         cost: 13.99,
         imageUrl:
           "https://cdn.shopify.com/s/files/1/1876/4703/products/amped-af-black-cherry-sherbet-4307305300037_300x.png?v=1553010885",
@@ -26,7 +26,7 @@ export class ItemService {
       },
       {
         id: 3,
-        title: "Product Three",
+        title: "Men's hair spray",
         cost: 14,
         imageUrl:
           "https://images-na.ssl-images-amazon.com/images/I/31b1ZbUK9QL._SY300_QL70_.jpg",
@@ -34,7 +34,7 @@ export class ItemService {
       },
       {
         id: 4,
-        title: "Product Four",
+        title: "Dove Men's Body Deodorant",
         cost: 15,
         imageUrl:
           "https://www.walgreens.com/images/adaptive/share/images/categoryImages/359436_175.jpg",
@@ -42,7 +42,7 @@ export class ItemService {
       },
       {
         id: 5,
-        title: "Product Five",
+        title: "Mirror-less SLR camera w/ Lens",
         cost: 19,
         imageUrl:
           "http://www.fujifilm.com/products/digital_cameras/x/fujifilm_x_t100/img/shared/pic_ogp_01.jpg",
@@ -50,7 +50,7 @@ export class ItemService {
       },
       {
         id: 6,
-        title: "Product Six",
+        title: "Headphone with stand",
         cost: 20,
         imageUrl:
           "https://www.jabra.com/-/media/Images/Frontpage/LetUsHelpYou/Product-Series/evolve_series.png",

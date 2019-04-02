@@ -1,0 +1,36 @@
+.cartFooter {
+  margin: auto;
+  width: 50%;
+  text-align: right;
+}
+
+.totalCost,
+.checkOut {
+  width: 30%;
+  min-width: 200px;
+  text-align: center;
+  padding: auto;
+  float: right;
+}
+
+.totalCost {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.checkOut {
+  background-color: #f0c14b;
+  padding: auto;
+  clear: both;
+  float: right;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.emptyCart {
+  /* border: 1px red solid; */
+  text-align: center;
+  padding: 20px;
+}

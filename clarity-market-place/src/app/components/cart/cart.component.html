@@ -8,7 +8,12 @@
       (deleteItem)="deleteItem($event)"
     >
     </app-item>
-    <div *ngIf="!emptyArray">Total Cost: {{ total }}</div>
-    <div *ngIf="emptyArray">No Items in Shopping Cart</div>
+    <div class="cartFooter" *ngIf="!emptyArray">
+      <div class="totalCost">Total Cost: {{ total | currency: "USD" }}</div>
+      <div class="checkOut box" (click)="checkOut(total)">
+        Proceed to Checkout
+      </div>
+    </div>
+    <div class="emptyCart" *ngIf="emptyArray">Your Shopping Cart is empty.</div>
   </div>
 </div>
