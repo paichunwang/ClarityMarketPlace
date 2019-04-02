@@ -1,0 +1,19 @@
+<div>
+  <app-navigation></app-navigation>
+  <div>
+    <app-item
+      *ngFor="let item of items"
+      [item]="item"
+      (changeCount)="changeCount($event)"
+      (deleteItem)="deleteItem($event)"
+    >
+    </app-item>
+    <div class="cartFooter" *ngIf="!emptyArray">
+      <div class="totalCost">Total Cost: {{ total | currency: "USD" }}</div>
+      <div class="checkOut box" (click)="checkOut(total)">
+        Proceed to Checkout
+      </div>
+    </div>
+    <div class="emptyCart" *ngIf="emptyArray">Your Shopping Cart is empty.</div>
+  </div>
+</div>
